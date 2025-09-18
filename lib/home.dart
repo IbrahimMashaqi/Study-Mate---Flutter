@@ -13,11 +13,11 @@ class _HomeState extends State<Home> {
     return (Card(
       elevation: 0,
 
-      margin: EdgeInsets.only(top: 15),
+      margin: EdgeInsets.only(top: 10),
 
       shape: RoundedRectangleBorder(
-        side: const BorderSide(color: Colors.grey, width: 1), // border
-        borderRadius: BorderRadius.circular(5), // optional rounded corners
+        side: const BorderSide(color: Colors.grey, width: 1),
+        borderRadius: BorderRadius.circular(5),
       ),
       child: ListTile(
         title: Text(
@@ -27,6 +27,7 @@ class _HomeState extends State<Home> {
             color: Colors.purple,
             fontWeight: FontWeight.w500,
           ),
+          softWrap: true,
         ),
 
         subtitle: Text(sub),
@@ -60,7 +61,7 @@ class _HomeState extends State<Home> {
         appBar: AppBar(
           title: Padding(
             padding: EdgeInsets.only(top: 2, bottom: 15),
-            child: Text("StudyMate"),
+            child: Text("Study Mate"),
           ),
         ),
         backgroundColor: const Color.fromARGB(255, 235, 230, 230),
@@ -70,10 +71,10 @@ class _HomeState extends State<Home> {
 
             children: [
               SizedBox(
-                height: 200,
+                height: 150,
                 child: GridView.count(
                   crossAxisCount: 1,
-                  childAspectRatio: 0.8,
+                  childAspectRatio: .6,
                   shrinkWrap: true,
                   mainAxisSpacing: 0,
                   crossAxisSpacing: 5,
@@ -195,15 +196,6 @@ class _HomeState extends State<Home> {
               ),
             ],
           ),
-        ),
-        bottomNavigationBar: BottomNavigationBar(
-          items: const [
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.menu_book),
-              label: "Materials",
-            ),
-          ],
         ),
       ),
     );

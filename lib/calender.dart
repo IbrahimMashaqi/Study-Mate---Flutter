@@ -63,20 +63,6 @@ class _CalenderState extends State<Calender> {
           },
           child: const Icon(Icons.add),
         ),
-
-        bottomNavigationBar: BottomNavigationBar(
-          items: const [
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.calendar_month),
-              label: "Calendar",
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.person),
-              label: "My Profile",
-            ),
-          ],
-        ),
       ),
     );
   }
