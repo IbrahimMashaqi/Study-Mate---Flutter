@@ -1,16 +1,13 @@
-# p1
+Study Mate
 
-A new Flutter project.
+Study Mate is a mobile application built with Flutter to help students organize their study schedules and notes more efficiently. It features a modern, user-friendly interface and practical tools for managing study plans and tracking tasks.
 
-## Getting Started
+Features
 
-This project is a starting point for a Flutter application.
+Schedule Management: Organize and plan study sessions.
 
-A few resources to get you started if this is your first Flutter project:
+Notes: Keep track of important notes for each subject.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Task Tracking: Mark tasks as completed and monitor progress.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Clean UI: Intuitive and easy-to-navigate interface.
