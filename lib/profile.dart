@@ -45,7 +45,7 @@ class _ProfileState extends State<Profile> {
                   const Positioned(
                     top: 50,
                     child: Text(
-                      "Ibrahim Mashai",
+                      "Ibrahim Mashaqi",
                       style: TextStyle(
                         fontSize: 25,
                         fontWeight: FontWeight.bold,
