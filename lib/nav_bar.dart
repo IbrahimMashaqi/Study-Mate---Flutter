@@ -7,6 +7,7 @@ class NavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
+      type: BottomNavigationBarType.fixed,
       currentIndex: currentIndex,
       onTap: onTap,
       items: const [
@@ -15,6 +16,7 @@ class NavBar extends StatelessWidget {
           icon: Icon(Icons.calendar_month),
           label: "Calendar",
         ),
+        BottomNavigationBarItem(icon: Icon(Icons.book), label: "Materials"),
         BottomNavigationBarItem(icon: Icon(Icons.person), label: "My Profile"),
       ],
     );

@@ -40,11 +40,18 @@ class _CalenderState extends State<Calender> {
         ),
       ),
       home: Scaffold(
-        appBar: AppBar(title: const Text("📅 My Calendar"), centerTitle: true),
+        appBar: AppBar(title: const Text(" My Calendar"), centerTitle: true),
 
         body: Column(
           children: [
             TableCalendar(
+              calendarStyle: CalendarStyle(
+                selectedDecoration: BoxDecoration(
+                  color: Colors.purple,
+                  shape: BoxShape.circle,
+                ),
+              ),
+
               focusedDay: _focusedDay,
               firstDay: DateTime(2020),
               lastDay: DateTime(2100),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:p1/calender.dart';
 import 'package:p1/home.dart';
+import 'package:p1/materials.dart';
 import 'package:p1/nav_bar.dart';
 import 'package:p1/profile.dart';
 
@@ -13,7 +14,12 @@ class StudyMate extends StatefulWidget {
 
 class _StudyMateState extends State<StudyMate> {
   int _currentIndex = 0;
-  final List<Widget> _pages = const [Home(), Calender(), Profile()];
+  final List<Widget> _pages = const [
+    Home(),
+    Calender(),
+    Materials(),
+    Profile(),
+  ];
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

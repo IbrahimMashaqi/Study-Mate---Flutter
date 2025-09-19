@@ -26,7 +26,6 @@ class _ProfileState extends State<Profile> {
       home: Scaffold(
         body: Column(
           children: [
-            // الهيدر
             Container(
               height: 200,
               decoration: const BoxDecoration(
