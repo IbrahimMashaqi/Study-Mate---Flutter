@@ -31,7 +31,7 @@ class _HomeState extends State<Home> {
         ),
 
         subtitle: Text(sub),
-        //trailing: Text(tr),
+        trailing: Text(tr),
         leading: Icon(i),
       ),
     ));
@@ -72,12 +72,13 @@ class _HomeState extends State<Home> {
             children: [
               SizedBox(
                 height: 150,
+
                 child: GridView.count(
                   crossAxisCount: 1,
                   childAspectRatio: .6,
                   shrinkWrap: true,
-                  mainAxisSpacing: 0,
-                  crossAxisSpacing: 5,
+                  mainAxisSpacing: 5,
+                  crossAxisSpacing: 10,
                   scrollDirection: Axis.horizontal,
                   children: [
                     _creatCard(
@@ -184,7 +185,7 @@ class _HomeState extends State<Home> {
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                     subtitle: Text(
-                      "Data Structure",
+                      "Pic",
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                     leading: Icon(
